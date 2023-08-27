@@ -1,4 +1,5 @@
-import { Controller, Get } from '@nestjs/common';
+import { UpdatePreferenceDto } from './../dto/update.preference.dto';
+import { Body, Controller, Get, Patch } from '@nestjs/common';
 import { MarrPreferenceService } from './../services/marr-preference.service';
 
 @Controller('marr-preference')
@@ -7,7 +8,13 @@ export class MarrPreferenceController {
 
   @Get()
   async getMarrPreference() {
-    const userId = 1;
-    return this.marrPreferenceService.getMarrPreference(userId);
+    const user_id = 1;
+    return this.marrPreferenceService.getMarrPreference(user_id);
+  }
+
+  @Patch()
+  async updateMarrPreference(@Body() body: UpdatePreferenceDto) {
+    const user_id = 1;
+    return this.marrPreferenceService.updateMarrPreference(user_id, body);
   }
 }
