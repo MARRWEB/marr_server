@@ -4,6 +4,8 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
 import { MarrPreferenceModule } from './marr-preference/marr-preference.module';
+import { AuthModule } from './auth/auth.module';
+import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
@@ -23,6 +25,8 @@ import { MarrPreferenceModule } from './marr-preference/marr-preference.module';
       synchronize: true,
     }),
     MarrPreferenceModule,
+    AuthModule,
+    UserModule,
   ],
   controllers: [AppController],
   providers: [AppService],
