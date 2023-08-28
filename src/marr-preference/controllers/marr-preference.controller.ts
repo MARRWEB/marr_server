@@ -1,4 +1,4 @@
-import { UpdatePreferenceDto } from './../dto/update.preference.dto';
+import { UpdatePreferenceDto } from '../dtos/update.preference.dto';
 import { Body, Controller, Get, Patch } from '@nestjs/common';
 import { MarrPreferenceService } from './../services/marr-preference.service';
 

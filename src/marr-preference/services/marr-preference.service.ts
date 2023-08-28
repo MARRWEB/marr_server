@@ -1,4 +1,4 @@
-import { UpdatePreferenceDto } from './../dto/update.preference.dto';
+import { UpdatePreferenceDto } from '../dtos/update.preference.dto';
 import { PreferenceRepository } from './../marr-preference.repository';
 import { Injectable } from '@nestjs/common';
 

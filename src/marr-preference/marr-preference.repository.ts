@@ -1,4 +1,4 @@
-import { UpdatePreferenceDto } from './dto/update.preference.dto';
+import { UpdatePreferenceDto } from './dtos/update.preference.dto';
 import { Preferences } from './../../entities/Preferences';
 import { DataSource, Repository } from 'typeorm';
 import { Injectable, NotFoundException } from '@nestjs/common';
